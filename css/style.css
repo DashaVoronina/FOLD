@@ -237,7 +237,7 @@ button {
     margin: 0;
     font-family: futura-bold;
     font-weight: bold;
-    font-size: 45px;
+    font-size: 64px;
     line-height: 1.5;
     color: #fffeff;
 }
@@ -248,8 +248,12 @@ button {
     color: #ffffff;
     font-family: futura-bold;
     margin: 0;
+    font-size: 24px;
 }
 
+.button_main {
+    display: none;
+}
 .container-polygon {
     margin-left: 60px;
     margin-right: 60px;
@@ -328,6 +332,8 @@ h4 > a {
     font-size: 32px;
     text-align: center; 
     font-family: futura-bold;
+    margin: 0;
+    margin-bottom: 40px;
 
 }
 .new-collection {
@@ -336,7 +342,7 @@ h4 > a {
     width: 1096px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 36px;
+    
 }
 .user__img {
     width: 538px;
@@ -404,6 +410,14 @@ h4 > a {
     
 }
 
+.trands-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: futura;
+    font-size: 32px;
+    margin: 0;
+    margin-bottom: 40px;
+}
 
 .trands__list {
     text-decoration: none;
@@ -425,12 +439,7 @@ h4 > a {
     width: 427px;
 }
 
-.trands-title {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: futura;
-    font-size: 32px;
-}
+
 
 
 
@@ -448,6 +457,8 @@ h4 > a {
     text-align: center;
     text-transform: uppercase;
     font-size: 32px;
+    margin: 0;
+    margin-bottom: 40px;
 }
 .designers__list {
     display: flex;
@@ -527,8 +538,7 @@ article .designer {
         display: flex;
         box-sizing: border-box;
         width: 100%;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        
        
         margin: 0;
         margin-left: auto;
@@ -616,6 +626,9 @@ article .designer {
         font-size: 20px;
     }
 
+    .quick-links {
+        line-height: 1.3;
+    }
     .quick-link a {
         color: #ffffff;
         text-decoration: none;
@@ -668,14 +681,28 @@ article .designer {
 
     @media (max-width: 640px) {
 
-        .welcome {
-            height: 635px;
-        }
+    .header {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        margin: 0;
+    }
 
+    .container-logo {
+        display: none;
+    }
+
+    .container-menu {
+        width: 90%;
+        margin-top: 35px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
         
     .menu {
-        width: 25px;
-        height: 25px;
+        width: 35px;
+        height: 35px;
 
     }
     .menu__button {
@@ -700,18 +727,18 @@ article .designer {
     .menu__button:after, .menu__button:before {
         content: "";
         width: 100%;
-        height: 20%;
-        border-radius: 5px;
+        height: 10%;
+       
         background-color: #ffffff;
         position: absolute;
         left: 0;
     }
     .menu__button-label {
-        width: 100%;
-        height: 20%;
+        width: 80%;
+        height: 10%;
         margin-top: -0.1em;
-        border-radius: 5px;
-        background-color: #000000;
+        
+        background-color: #ffffff;
         position: absolute;
         left: 0;
         top: 50%;
@@ -719,7 +746,89 @@ article .designer {
     .menu-list {
         display: none;
     }
+
+    .container-profile {
+        width: 20%;
+    }
+    .profile-item:first-child {
+        display: none;
+    }
+
+    .profile-item:nth-child(2) {
+        display: none;
+    }
+
+    .profile-item:nth-child(1n+3) {
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+        
+    }
+
+    .profile-link-cabinet {
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+        fill: #ffffff;
+    }
+
+    .profile-link-cart {
+        width: 25px;
+        height: 25px;
+        background-size: 25px;
+        fill: #ffffff;
+    }
+
+
+    .welcome {
+        height: 750px;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .welcome-title {
+        font-size: 48px;
+    }
+
+    .welcome-title-small {
+        font-size: 16px;
+    }
+
+    .button_main {
+        display: flex;
+        width: 100%;
+    }
+
+    .button_main > .button_shop {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 37px;
+        background-color: #ffffff;
+        z-index: 2;
+        
+    }
+
+    .button_main > .button_shop:hover {
+        background-color: #91A6BF;
+        
+        
+    }
+
+    .container-polygon {
+        display: none;
+    }
+
+    .list {
+        margin-top: 450px;
+    }
     
+    .new_collection {
+        margin-top: 80px;
+    }
+
     .container-new {
         
             display: flex;
@@ -729,10 +838,15 @@ article .designer {
             margin-left: auto;
             margin-right: auto;
     }
+    .new-title {
+        margin-bottom: 25px;
+        font-size: 24px;
+    }
     .new-collection {
         display: flex;
         flex-direction: column;
         width: 100%;
+        
     }
     .user img {
         width: 100%;
@@ -743,25 +857,52 @@ article .designer {
         margin-left: 0;
     }
 
+    .article__text {
+        margin-bottom: 35px;
+    }
+
+    .button_new {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .button_discover {
+        width: 173px;
+        height: 50px;
+        margin-right: 10px;
+    }
 
     .container-trands {
         width: 90%;
+        margin-top: 80px;
     }
+
+    .trands-title {
+        
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
     .trands__list {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-
+        margin-bottom: 35px;
     }
     .trands__item {
         width: 100%;
         flex: 1 1 auto;
         margin: 0;
-        margin-bottom: 0.5%;
+        margin-bottom: 65px;
+        
     }
+
     .trands__item:last-child {
-        margin-bottom: 45px;
+        margin-bottom: 0;  
     }
+    
     .trand_image img {
         width: 100%;
         
@@ -769,10 +910,25 @@ article .designer {
     .trand_info {
         width: 100%;
     }
+    .button_trands {
+        width: 100%;
+        height: 50px;
+    }
 
+    .button_trands > .button_discover {
+        width: 100%;
+    }
 
     .container-designers {
         width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+    }
+
+    .featured-designers {
+        margin-bottom: 25px;
+        font-size: 24px;
     }
 
     .designers {
@@ -782,38 +938,132 @@ article .designer {
     .designers__list {
         display: flex;
         flex-wrap: wrap;
-        width: 50%;
+        width: 100%;
+        margin-bottom: 35px;
     }
 
     .designers__item {
-        width: 100%;
+        width: 48%;
         flex: 1 1 auto;
         margin: 0;
-        margin-bottom: 0.5%;}
+        margin-bottom: 5px;
+        margin-right: 10px;
+    }
+
+    .designers__item:nth-child(even) {
+        margin-right: 0;
+    }
 
     .user-designer img {
         width: 100%;
         height: 100%;
         }
     
+    .designer_info {
+        font-size: 18px;
+    }
+
     .designers_buttons {
         width: 100%;
+        justify-content: center;
+    }
+
+    .button_view {
+        width: 173px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .button_shop {
+        width: 173px;
+        height: 50px;
     }
 
     .links {
         width: 90%;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+        margin-bottom: 80px;
     }
 
+    .follow {
+        font-size: 24px;
+    }
+
+    .socials-item {
+        margin-right: 30px;
+    }
+    .socials-item:last-child {
+        margin-right: 0;
+    }
+
+    .socials-link {
+        width: 33px;
+        height: 33px;
+        background-size: 33px;
+    }
+
+    .footer {
+        height: 100%;
+    }
     .footer-elements {
-        width: 100%;
+        width: 90%;
+        padding-bottom: 80px;
     }
     .articles-footer {
         display: flex;
         flex-direction: column;
     }
 
+    .links-column {
+        order: 1;
+        margin: 0;
+        margin-left: 60px;
+    }
+
+    .text-links {
+        margin: 0;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .quick-link-text {
+        font-size: 18px;
+    }
+
+    .text-column {
+        order: 2;
+        margin: 0;
+        margin-left: 60px;
+    }
+
+    .newsletter {
+        order: 0;
+    }
+
+    .subscribe-text {
+        margin: 0;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .subscribe-email {
+        width: 100%;
+    }
+
     .email {
-        width: 90%;
+        width: 100%;
+        height: 50px;
+    }
+
+    .subscribe-button {
+        width: 100%;
+        height: 50px;
+        margin: 0;
+        margin-top: 15px;
     }
 
 }

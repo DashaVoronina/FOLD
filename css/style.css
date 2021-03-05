@@ -1,12 +1,12 @@
 @font-face {
     font-family: futura;
-    src: url("../fonts/Futura.ttf");
+    src: url("../fonts/ftr45.ttf");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: futura-bold;
-    src: url("../fonts/Futura.ttf");
+    src: url("../fonts/ftr45.ttf");
     font-weight: bold;
     font-style: normal;
 }
@@ -455,6 +455,9 @@ h4 > a {
     margin-bottom: 40px;
 }
 
+.trands {
+    width: 95%
+}
 
 
 .trands__list {
@@ -462,11 +465,17 @@ h4 > a {
     display: flex;
     margin: 0;
     margin-bottom: 60px;
+    justify-content: center;
+}
+
+.trand_img {
+    width: 100%;
 }
     
 .trands__item {
     
     margin-right: 20px;
+    width: 30%;
 }
 
 .trands__item:last-child {
@@ -474,7 +483,7 @@ h4 > a {
 }
 
 .trand_info {
-    width: 427px;
+    width: 100%;
     margin-top: 25px;
 }
 
@@ -492,11 +501,14 @@ h4 > a {
 
 .container-designers {
     margin-top: 125px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .designers {
     display: flex;
     flex-direction: column;
-    width: 1320px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -512,6 +524,7 @@ h4 > a {
     display: flex;
     margin: 0;
     margin-bottom: 60px;
+    justify-content: center;
 }
 .designers__item {
     margin-right: 20px;
@@ -526,6 +539,10 @@ h4 > a {
 article .designer {
     position: relative;
     
+}
+
+.user-designer__img {
+    width: 100%;
 }
 .designer_info {
     position: absolute;

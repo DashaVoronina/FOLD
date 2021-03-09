@@ -1,7 +1,7 @@
 @font-face {
     font-family: futura;
     src: url("../fonts/ftr45.ttf");
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 }
 @font-face {
@@ -240,7 +240,7 @@ button {
     display: flex;
     
     box-sizing: border-box;
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
     
 }
@@ -351,6 +351,7 @@ h4 > a {
     margin-left: auto;
     margin-right: auto;
     margin-top: 125px;
+    width: 95%;
     
 }
 .new-title {
@@ -365,20 +366,25 @@ h4 > a {
 .new-collection {
     display: flex;
     align-items: center;
-    width: 1096px;
+    width: 77%;
     margin-left: auto;
     margin-right: auto;
     
 }
+
+.user {
+    width: 100%;
+}
+
 .user__img {
-    width: 538px;
-    height: 538px;
+    width: 100%;
+    height: 100%;
 }
 
 .new-info{
     display: block;
     
-    margin-left: 132px;
+    margin-left: 10%;
     
 }
 
@@ -437,7 +443,7 @@ h4 > a {
 .container-trands {
     margin: 0;
     margin-top: 125px;
-    width: 1320px;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -692,7 +698,7 @@ article .designer {
     }
 
     .footer-elements {
-        width: 90%;
+        width: 95%;
         max-width: 1500px;
         margin-left: auto;
         margin-right: auto;
@@ -709,9 +715,10 @@ article .designer {
         justify-content: space-between;
         margin-left: auto;
         margin-right: auto;
+        width: 100%;
     }
     .links-column {
-        margin-right: 131px;
+        width: 15%;
     }
 
     .text-links {
@@ -737,8 +744,14 @@ article .designer {
     }
 
     .text-column {
-        margin-right: 131px;
+        width: 15%;
     }
+
+
+    .newsletter {
+        width: 45%;
+    }
+
     .subscribe {
         display: flex;
         flex-direction: column;
@@ -756,10 +769,11 @@ article .designer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .email {
-        width: 648px;
+        width: 100%;
         height: 60px;
         background-color: #ffffff;
         outline: none;
@@ -959,6 +973,11 @@ article .designer {
         width: 100%;
         
     }
+
+    .user {
+        width: 100%;
+    }
+
     .user img {
         width: 100%;
         height: 100%;
@@ -1149,13 +1168,14 @@ article .designer {
         order: 1;
         margin: 0;
         margin-left: 60px;
+        width: 100%;
     }
 
     .text-links {
         margin: 0;
         margin-top: 60px;
-        margin-bottom: 20px;
         font-size: 18px;
+        
     }
 
     .quick-link-text {
@@ -1166,10 +1186,12 @@ article .designer {
         order: 2;
         margin: 0;
         margin-left: 60px;
+        width: 100%;
     }
 
     .newsletter {
         order: 0;
+        width: 100%;
     }
 
     .subscribe-text {

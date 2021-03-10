@@ -24,6 +24,7 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
     margin: 0;
+    min-width: 320px;
 }
 ul {
     list-style-type: none;
@@ -301,7 +302,7 @@ button {
 .list {
     display: flex;
     position: absolute;
-    margin-top: 520px;
+    margin-top: 30%;
     align-items: center;
 }
 .circle1 {
@@ -691,7 +692,7 @@ article .designer {
     }
 
     .footer {
-        width: 100%;
+        
         
         background-color: #333533;
         
@@ -946,9 +947,7 @@ article .designer {
         display: none;
     }
 
-    .list {
-        margin-top: 450px;
-    }
+    
     
     .new_collection {
         margin-top: 80px;
